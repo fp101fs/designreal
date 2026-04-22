@@ -27,3 +27,21 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+@keyframes cardFloat {
+  0% {
+    transform: rotateX(-12deg) rotateY(6deg) rotateZ(-0.6deg) translateY(0px);
+  }
+  25% {
+    transform: rotateX(-9deg) rotateY(9deg) rotateZ(0.8deg) translateY(-12px);
+  }
+  50% {
+    transform: rotateX(-13deg) rotateY(7deg) rotateZ(1.3deg) translateY(-18px);
+  }
+  75% {
+    transform: rotateX(-10deg) rotateY(5deg) rotateZ(0.2deg) translateY(-8px);
+  }
+  100% {
+    transform: rotateX(-12deg) rotateY(6deg) rotateZ(-0.6deg) translateY(0px);
+  }
+}
