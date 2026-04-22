@@ -26,3 +26,8 @@ dist
 # OS
 .DS_Store
 Thumbs.db
+
+# Screenshots / Playwright artifacts
+*.png
+*.jpg
+.playwright-mcp/
