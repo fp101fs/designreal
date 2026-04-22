@@ -1,0 +1,340 @@
+- generic [ref=e2]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e11]
+        - generic [ref=e16]:
+          - link "Login" [ref=e17] [cursor=pointer]:
+            - /url: https://billing.stripe.com/p/login/14keXT4Qa8wh5k4dQQ
+            - generic [ref=e18]: Login
+          - link "Book a call" [ref=e19] [cursor=pointer]:
+            - /url: "#book"
+            - generic [ref=e20]: Book a call
+          - link "See pricing" [ref=e21] [cursor=pointer]:
+            - /url: "#pricing"
+            - generic [ref=e22]: See pricing
+      - generic [ref=e23]:
+        - heading "Design subscriptions for everyone" [level=1] [ref=e24]
+        - paragraph [ref=e25]:
+          - generic [ref=e26]: Pause or cancel anytime.
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - img [ref=e31]
+        - generic [ref=e36]: Start today
+      - generic [ref=e37]:
+        - generic [ref=e38]: Join
+        - generic [ref=e39]: Designjoy
+        - generic [ref=e40]: One subscription to rule them all.
+        - link "See pricing" [ref=e41] [cursor=pointer]:
+          - /url: "#pricing"
+      - link "Book a 15-min intro call Schedule now" [ref=e42] [cursor=pointer]:
+        - /url: "#book"
+        - generic [ref=e44]:
+          - generic [ref=e45]: Book a 15-min intro call
+          - generic [ref=e46]: Schedule now
+  - generic [ref=e51]:
+    - heading "The way design should’ve been done in the first place" [level=2] [ref=e53]
+    - generic [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]: Subscribe
+        - paragraph [ref=e58]: Subscribe to a plan & request as many designs as you’d like.
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: Request
+          - paragraph [ref=e62]: Request whatever you'd like, from mobile apps to logos.
+        - generic [ref=e64]:
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e69]: Mobile apps
+              - generic [ref=e71]: Presentations
+              - generic [ref=e73]: Logos
+              - generic [ref=e75]: Social Media
+              - generic [ref=e77]: Email
+            - generic [ref=e78]:
+              - generic [ref=e80]: Mobile apps
+              - generic [ref=e82]: Presentations
+              - generic [ref=e84]: Logos
+              - generic [ref=e86]: Social Media
+              - generic [ref=e88]: Email
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e93]: Webflow
+              - generic [ref=e95]: Print design
+              - generic [ref=e97]: Packaging
+              - generic [ref=e99]: Ad creative
+              - generic [ref=e101]: Landing pages
+            - generic [ref=e102]:
+              - generic [ref=e104]: Webflow
+              - generic [ref=e106]: Print design
+              - generic [ref=e108]: Packaging
+              - generic [ref=e110]: Ad creative
+              - generic [ref=e112]: Landing pages
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e117]: Branding
+              - generic [ref=e119]: Email
+              - generic [ref=e121]: Display ads
+              - generic [ref=e123]: Packaging
+              - generic [ref=e125]: User interface
+            - generic [ref=e126]:
+              - generic [ref=e128]: Branding
+              - generic [ref=e130]: Email
+              - generic [ref=e132]: Display ads
+              - generic [ref=e134]: Packaging
+              - generic [ref=e136]: User interface
+      - generic [ref=e139]:
+        - generic [ref=e140]: Receive
+        - paragraph [ref=e141]: Receive your design within two business days on average.
+  - generic [ref=e152]:
+    - paragraph [ref=e154]:
+      - text: First launched in 2017, Designjoy revolutionized the design industry with its subscription-based model. To this day, Designjoy is run entirely by
+      - link "Brett" [ref=e155] [cursor=pointer]:
+        - /url: https://x.com/BrettFromDJ
+      - text: . Designjoy doesn’t hire extra designers or outsource work—instead, it focuses on delivering top-notch quality to a limited roster of clients at a time.
+    - generic [ref=e156]:
+      - generic [ref=e157]: Membership benefits
+      - heading "It's \"you'll never go back\" better" [level=1] [ref=e158]
+      - paragraph [ref=e159]: Designjoy replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs delivered so fast you won't want to go anywhere else.
+  - region "carousel" [ref=e165]:
+    - generic [ref=e166]:
+      - group "1 of 6" [ref=e167]:
+        - generic [ref=e168]:
+          - generic [ref=e170]: Design board
+          - paragraph [ref=e171]: Easily manage your design queue with a Trello board.
+      - group [ref=e172]:
+        - generic [ref=e173]:
+          - generic [ref=e175]: Fixed monthly rate
+          - paragraph [ref=e176]: No surprises here! Pay the same fixed price each month.
+      - group [ref=e177]:
+        - generic [ref=e178]:
+          - generic [ref=e180]: Fast delivery
+          - paragraph [ref=e181]: Get your design one at a time in just a couple days on average.
+      - group [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e185]: Top-notch quality
+          - paragraph [ref=e186]: Senior-level design quality at your fingertips, whenever you need it.
+      - group [ref=e187]:
+        - generic [ref=e188]:
+          - generic [ref=e190]: Flexible and scalable
+          - paragraph [ref=e191]: Scale up or down as needed, and pause or cancel at anytime.
+      - group [ref=e192]:
+        - generic [ref=e193]:
+          - generic [ref=e195]: Unique and all yours
+          - paragraph [ref=e196]: Every design is made especially for you and is 100% yours.
+    - button "previous slide" [ref=e198] [cursor=pointer]:
+      - generic [ref=e199]: 
+    - button "next slide" [ref=e200] [cursor=pointer]:
+      - generic [ref=e201]: 
+  - generic [ref=e207]:
+    - generic [ref=e210]: "\"Designjoy shows that they know the art of subtlety.\""
+    - generic [ref=e212]:
+      - generic [ref=e213]: "\"Design is everything, and these guys have nailed it.\""
+      - generic [ref=e215]:
+        - generic [ref=e216]: Kevin O'Leary
+        - generic [ref=e217]: Shark Tank
+  - generic [ref=e223]:
+    - generic [ref=e229]:
+      - generic [ref=e231]:
+        - generic [ref=e232]:
+          - generic [ref=e235]: Buy Me A Coffee
+          - generic [ref=e236]: Fintech Product of the Year
+        - generic [ref=e237]:
+          - generic [ref=e240]: Switchboard
+          - generic [ref=e241]: Remote Work Product of the Year
+      - generic [ref=e242]: Recent work
+      - paragraph [ref=e243]: We're talking "Product of the Year" good.
+      - link "See recent work" [ref=e244] [cursor=pointer]:
+        - /url: https://www.figma.com/proto/wbWTRa1jCey4uhInRAmH1r/Latest-Projects?page-id=0%3A1&type=design&node-id=906-2343&viewport=450%2C721%2C0.13&t=ZYPXbxSFD1m31WCi-1&scaling=min-zoom&mode=design
+        - generic [ref=e245]: See recent work
+    - generic [ref=e247]:
+      - generic [ref=e248]:
+        - generic [ref=e250]: Web design
+        - generic [ref=e252]: Logos
+        - generic [ref=e254]: Slide decks
+        - generic [ref=e256]: Branding
+        - generic [ref=e258]: Social media
+        - generic [ref=e260]: UI/UX design
+        - generic [ref=e262]: Webflow development
+        - generic [ref=e264]: Mobile apps
+        - generic [ref=e266]: Print design
+        - generic [ref=e268]: Email
+        - generic [ref=e270]: Display ads
+        - generic [ref=e272]: Icons
+        - generic [ref=e274]: Brand guides
+        - generic [ref=e276]: + more
+      - generic [ref=e277]:
+        - generic [ref=e278]: Apps, websites, logos & more
+        - paragraph [ref=e279]: All the things you need under one roof.
+  - generic [ref=e283]:
+    - generic [ref=e284]:
+      - generic [ref=e285]: PRICING
+      - heading "One subscription, endless possibilities" [level=1] [ref=e286]
+    - generic [ref=e287]:
+      - generic [ref=e289]:
+        - generic [ref=e290]:
+          - img [ref=e292]
+          - generic [ref=e297]: Start today
+        - generic [ref=e298]: Join
+        - generic [ref=e299]: Designjoy
+      - generic [ref=e300]:
+        - generic [ref=e301]:
+          - generic [ref=e302]: Monthly Club
+          - generic [ref=e304]: PAUSE OR CANCEL ANYTIME
+        - generic [ref=e305]: Lifetime Discount - Limited Time
+        - generic [ref=e306]:
+          - generic [ref=e307]:
+            - heading "$4,995" [level=2] [ref=e308]
+            - generic [ref=e309]: /month
+          - heading "$5,995" [level=2] [ref=e310]
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - generic [ref=e313]:
+              - generic [ref=e314]: One request at a time
+              - generic [ref=e315]: Avg. 48 hour delivery
+              - generic [ref=e316]: Unlimited brands
+              - generic [ref=e317]: Webflow development
+            - generic [ref=e318]:
+              - generic [ref=e319]: Unlimited stock photos
+              - generic [ref=e320]: Up to 2 users
+              - generic [ref=e321]: Pause or cancel anytime
+          - generic [ref=e323]: Included
+        - link "Join today" [ref=e325] [cursor=pointer]:
+          - /url: https://buy.stripe.com/fZe28BaiLfOO99e146
+          - generic [ref=e327]: Join today
+    - generic [ref=e328]:
+      - generic [ref=e330]:
+        - generic [ref=e332]: Pause anytime
+        - paragraph [ref=e333]: Temporarily pause your subscription anytime, no sweat.
+      - generic [ref=e335]:
+        - generic [ref=e337]: Try it for a week
+        - paragraph [ref=e338]: Not loving it after a week? Get 75% back, no questions asked.
+  - generic [ref=e345]:
+    - generic [ref=e346]:
+      - heading "Frequently asked questions" [level=1] [ref=e347]
+      - generic [ref=e348]:
+        - generic [ref=e351]: How fast will I receive my designs?
+        - generic [ref=e354]: How does onboarding work?
+        - generic [ref=e357]: Who are the designers?
+        - generic [ref=e360]: Is there a limit to how many requests I can make?
+        - generic [ref=e363]: How does the pause feature work?
+        - generic [ref=e366]: How do you handle larger requests?
+        - generic [ref=e369]: What programs do you design in?
+        - generic [ref=e372]: How does Webflow development work?
+        - generic [ref=e375]: How will I request designs?
+        - generic [ref=e378]: What if I don’t like the design?
+        - generic [ref=e381]: Are there any requests you don’t support?
+        - generic [ref=e384]: What if I only have a single request?
+        - generic [ref=e387]: Are there any refunds?
+        - generic [ref=e390]: Can I use Designjoy for just a month?
+    - generic [ref=e391]:
+      - generic [ref=e392]:
+        - generic [ref=e393]: Book a 15-min intro call
+        - link "Book a call" [ref=e394] [cursor=pointer]:
+          - /url: "#book"
+      - link "Prefer to email? hello@designjoy.co" [ref=e395] [cursor=pointer]:
+        - /url: mailto:hello@designjoy.co?subject=Website%20Inquiry
+        - generic [ref=e397]:
+          - generic [ref=e398]: Prefer to email?
+          - generic [ref=e399]: hello@designjoy.co
+  - generic [ref=e405]:
+    - generic [ref=e406]:
+      - generic [ref=e407]:
+        - link [ref=e409] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e411]
+        - generic [ref=e412]:
+          - heading "See if Designjoy is the right fit for you (it totally is)" [level=1] [ref=e413]
+          - paragraph [ref=e414]: Schedule a quick, 15 minute guided tour through Designjoy.
+      - generic [ref=e416]:
+        - generic [ref=e417]: Headquartered in Phoenix, Arizona
+        - link "Terms of service" [ref=e418] [cursor=pointer]:
+          - /url: https://brettwill1025.notion.site/Terms-Conditions-4901d894656448a69c4c4e04d40d3bbc
+        - link "Privacy Policy" [ref=e419] [cursor=pointer]:
+          - /url: https://brettwill1025.notion.site/DesignJoy-Privacy-Policy-0011594d80724a68821940237f9f7b02
+    - iframe [ref=e424]:
+      - generic [active] [ref=f1e1]:
+        - img
+        - main [ref=f1e3]:
+          - generic [ref=f1e5]:
+            - generic [ref=f1e9]:
+              - generic [ref=f1e10]:
+                - time [ref=f1e12]:
+                  - strong [ref=f1e13]: April
+                  - text: "2026"
+                - generic [ref=f1e15]:
+                  - button "View previous month" [disabled] [ref=f1e16]:
+                    - img [ref=f1e17]
+                  - button "View next month" [ref=f1e19] [cursor=pointer]:
+                    - img [ref=f1e20]
+              - generic [ref=f1e22]:
+                - generic [ref=f1e23]: Sun
+                - generic [ref=f1e24]: Mon
+                - generic [ref=f1e25]: Tue
+                - generic [ref=f1e26]: Wed
+                - generic [ref=f1e27]: Thu
+                - generic [ref=f1e28]: Fri
+                - generic [ref=f1e29]: Sat
+              - generic [ref=f1e30]:
+                - button "8" [disabled] [ref=f1e35]
+                - button "9" [disabled] [ref=f1e37]
+                - button "10" [disabled] [ref=f1e39]
+                - button "11" [disabled] [ref=f1e41]
+                - button "12" [disabled] [ref=f1e43]
+                - button "13" [disabled] [ref=f1e45]
+                - button "14" [disabled] [ref=f1e47]
+                - button "15" [disabled] [ref=f1e49]
+                - button "16" [disabled] [ref=f1e51]
+                - button "17" [disabled] [ref=f1e53]
+                - button "18" [disabled] [ref=f1e55]
+                - button "19" [disabled] [ref=f1e57]
+                - button "20" [disabled] [ref=f1e59]
+                - button "21" [disabled] [ref=f1e61]
+                - button "22 Today" [ref=f1e63]:
+                  - text: "22"
+                  - generic [ref=f1e65]: Today
+                - button "23" [ref=f1e67]
+                - button "24" [ref=f1e69]
+                - button "25" [ref=f1e71]
+                - button "26" [disabled] [ref=f1e73]
+                - button "27" [disabled] [ref=f1e75]
+                - button "28" [ref=f1e77]
+                - button "29" [ref=f1e79]
+                - button "30" [ref=f1e81]
+                - generic [ref=f1e82]:
+                  - generic [ref=f1e83]: May
+                  - button "1" [ref=f1e84]
+                - button "2" [ref=f1e86]
+                - button "3" [disabled] [ref=f1e88]
+                - button "4" [disabled] [ref=f1e90]
+                - button "5" [ref=f1e92]
+                - button "6" [ref=f1e94]
+                - button "7" [ref=f1e96]
+                - button "8" [ref=f1e98]
+                - button "9" [ref=f1e100]
+            - generic [ref=f1e101]:
+              - generic [ref=f1e103]:
+                - generic [ref=f1e104]:
+                  - text: Wed
+                  - generic [ref=f1e105]: "22"
+                - group "Time format" [ref=f1e107]:
+                  - radio "12h" [checked] [ref=f1e108] [cursor=pointer]:
+                    - generic [ref=f1e109]: 12h
+                  - radio "24h" [ref=f1e110] [cursor=pointer]:
+                    - generic [ref=f1e111]: 24h
+              - generic [ref=f1e115]:
+                - button "11:00pm" [ref=f1e117] [cursor=pointer]:
+                  - generic [ref=f1e119]: 11:00pm
+                - button "11:15pm" [ref=f1e121] [cursor=pointer]:
+                  - generic [ref=f1e123]: 11:15pm
+                - button "11:30pm" [ref=f1e125] [cursor=pointer]:
+                  - generic [ref=f1e127]: 11:30pm
+                - button "11:45pm" [ref=f1e129] [cursor=pointer]:
+                  - generic [ref=f1e131]: 11:45pm
+          - region "Notifications alt+T"
+        - alert [ref=f1e132]
+        - generic:
+          - region "Notifications"
+        - generic:
+          - region "Notifications"

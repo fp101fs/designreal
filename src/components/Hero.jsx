@@ -1,54 +1,45 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-16 relative overflow-hidden">
-      {/* Background grid */}
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage:
-            'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-        }}
-      />
-
-      <div className="relative z-10 max-w-4xl mx-auto">
-        <div className="inline-flex items-center gap-2 bg-surface border border-border rounded-full px-4 py-1.5 mb-8">
-          <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-          <span className="text-sm text-muted">Accepting new clients</span>
+    <section className="min-h-screen pt-20 pb-10 px-6 flex items-center">
+      <div className="max-w-5xl mx-auto w-full grid md:grid-cols-2 gap-10 items-center">
+        {/* Left */}
+        <div>
+          <h1 className="text-[72px] leading-[1.0] font-black text-black mb-5 tracking-tight">
+            Design subscriptions for{' '}
+            <span className="italic-serif text-[72px] font-normal">everyone</span>
+          </h1>
+          <p className="text-muted text-lg">Pause or cancel anytime.</p>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-6">
-          Design subscriptions
-          <br />
-          <span className="text-accent">for everyone.</span>
-        </h1>
-
-        <p className="text-muted text-lg md:text-xl mb-10 max-w-xl mx-auto">
-          Pause or cancel anytime.
-        </p>
-
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <a
-            href="#pricing"
-            className="bg-accent text-white font-semibold px-8 py-3.5 rounded-full hover:bg-accent/90 transition-colors text-base w-full sm:w-auto text-center"
-          >
-            See plans &amp; pricing
-          </a>
-          <a
-            href="https://calendly.com/designjoy"
-            className="border border-border text-white font-semibold px-8 py-3.5 rounded-full hover:border-white/40 transition-colors text-base w-full sm:w-auto text-center"
-          >
-            Book a call
-          </a>
+        {/* Right — hero card */}
+        <div className="rounded-3xl overflow-hidden shadow-2xl"
+          style={{ background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 40%, #c084fc 70%, #f472b6 100%)' }}>
+          <div className="p-8">
+            {/* sticker row */}
+            <div className="flex justify-end gap-3 mb-6">
+              <span className="text-5xl">😊</span>
+              <span className="text-5xl">🤩</span>
+              <span className="text-5xl" style={{ transform: 'rotate(-10deg)', display: 'inline-block' }}>😄</span>
+            </div>
+            <h2 className="text-white font-black text-4xl leading-tight mb-2">Join<br/>Designjoy</h2>
+            <p className="text-white/80 text-sm mb-6">One subscription to rule them all.</p>
+            <a href="#pricing"
+              className="block w-full bg-white text-black font-semibold text-center py-4 rounded-xl hover:bg-gray-100 transition-colors mb-4">
+              See pricing
+            </a>
+            <a href="https://calendly.com/designjoy/15min"
+              className="flex items-center justify-between bg-white/10 hover:bg-white/20 transition-colors rounded-xl px-4 py-3">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">😊</span>
+                <div>
+                  <p className="text-white font-medium text-sm">Book a 15-min intro call</p>
+                  <p className="text-white/60 text-xs">Schedule now</p>
+                </div>
+              </div>
+              <span className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-black font-bold text-sm">→</span>
+            </a>
+          </div>
         </div>
-
-        <a
-          href="https://calendly.com/designjoy/15min"
-          className="inline-flex items-center gap-2 text-muted hover:text-white text-sm transition-colors"
-        >
-          Book a 15-min intro call
-          <span>→</span>
-        </a>
       </div>
     </section>
   )

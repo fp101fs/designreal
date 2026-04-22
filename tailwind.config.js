@@ -4,14 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: '#0a0a0a',
-        surface: '#111111',
-        border: '#222222',
-        accent: '#f1404b',
-        muted: '#888888',
+        page: '#ECE6E8',
+        card: '#ffffff',
+        border: '#e4e4e4',
+        muted: '#8f8f8f',
+        'nav-btn': '#000000',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Figtree', 'sans-serif'],
+        display: ['Fraunces', 'serif'],
       },
     },
   },

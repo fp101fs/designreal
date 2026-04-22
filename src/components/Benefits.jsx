@@ -1,62 +1,69 @@
 const benefits = [
   {
-    icon: '📋',
+    icon: '🗂️',
+    gradient: 'linear-gradient(135deg, #fbbf24, #f59e0b, #ea580c)',
     title: 'Design board',
-    description:
-      'Manage your design queue easily using a Trello board. Add requests, track progress, and leave feedback — all in one place.',
+    desc: 'Easily manage your design queue with a Trello board.',
   },
   {
-    icon: '💳',
+    icon: '🔒',
+    gradient: 'linear-gradient(135deg, #06b6d4, #6366f1, #8b5cf6)',
     title: 'Fixed monthly rate',
-    description:
-      'No hourly billing, no surprise invoices. Pay one flat rate each month and request as much as you need.',
+    desc: 'No surprises here! Pay the same fixed price each month.',
   },
   {
     icon: '⚡',
-    title: 'Lightning fast delivery',
-    description:
-      'Most requests are completed within two business days, keeping your projects moving at speed.',
+    gradient: 'linear-gradient(135deg, #8b5cf6, #f97316, #fbbf24)',
+    title: 'Fast delivery',
+    desc: 'Get your design one at a time in just a couple days on average.',
   },
   {
-    icon: '🏆',
-    title: 'Senior-level quality',
-    description:
-      'Every design is crafted by Brett — a senior designer with nearly a decade of experience across startups and brands.',
+    icon: '⭐',
+    gradient: 'linear-gradient(135deg, #ec4899, #22c55e, #86efac)',
+    title: 'Top-notch quality',
+    desc: 'Senior-level design quality at your fingertips, whenever you need it.',
   },
   {
     icon: '🔄',
-    title: 'Flexible & scalable',
-    description:
-      'Pause your subscription when work slows down and resume when you need it again. Scale up or down with zero friction.',
+    gradient: 'linear-gradient(135deg, #ef4444, #f97316, #6366f1)',
+    title: 'Flexible and scalable',
+    desc: 'Scale up or down and pause or cancel at any time.',
   },
   {
     icon: '✅',
+    gradient: 'linear-gradient(135deg, #3b82f6, #6366f1, #a855f7)',
     title: 'Unique and all yours',
-    description:
-      'Everything designed for you is 100% yours. Full source files and ownership transferred on delivery.',
+    desc: 'Each design is made especially for you and owned by you 100%.',
   },
 ]
 
 export default function Benefits() {
   return (
-    <section className="bg-surface py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-4 text-center">
-          Benefits
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-          Everything you need. Nothing you don't.
+    <section className="py-16 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-black text-black text-center mb-4 leading-tight">
+          It&apos;s{' '}
+          <span className="italic-serif font-normal">&ldquo;you&apos;ll never go</span>
+          <br />
+          <span className="italic-serif font-normal">back&rdquo;</span> better
         </h2>
-        <p className="text-muted text-center mb-16 max-w-xl mx-auto">
-          One subscription unlocks a full suite of design services, on demand.
+        <p className="text-muted text-center mb-12 max-w-xl mx-auto">
+          Designjoy replaces unreliable freelancers and expensive agencies for one flat monthly fee,
+          with designs delivered so fast you won&apos;t want to go anywhere else.
         </p>
 
+        {/* Horizontal scroll on mobile, grid on desktop */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((b) => (
-            <div key={b.title} className="bg-bg border border-border rounded-2xl p-8">
-              <span className="text-3xl mb-4 block">{b.icon}</span>
-              <h3 className="text-white font-bold text-lg mb-3">{b.title}</h3>
-              <p className="text-muted text-sm leading-relaxed">{b.description}</p>
+            <div key={b.title} className="bg-white rounded-2xl overflow-hidden border border-border">
+              <div className="h-36 flex items-center justify-center text-5xl"
+                style={{ background: b.gradient }}>
+                {b.icon}
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-black text-base mb-1">{b.title}</h3>
+                <p className="text-muted text-sm leading-relaxed">{b.desc}</p>
+              </div>
             </div>
           ))}
         </div>
