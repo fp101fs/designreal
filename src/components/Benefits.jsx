@@ -41,13 +41,13 @@ export default function Benefits() {
   return (
     <section className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-black text-black text-center mb-4 leading-tight">
+        <h1 className="font-medium text-black text-center mb-4" style={{ fontSize: '82px', lineHeight: '78px' }}>
           It&apos;s{' '}
           <span className="text-italics">&ldquo;you&apos;ll never go</span>
           <br />
           <span className="text-italics">back&rdquo;</span> better
-        </h2>
-        <p className="text-muted text-center mb-12 max-w-xl mx-auto">
+        </h1>
+        <p className="text-muted text-center mb-12 max-w-xl mx-auto" style={{ fontSize: '20px', lineHeight: '24px' }}>
           Designjoy replaces unreliable freelancers and expensive agencies for one flat monthly fee,
           with designs delivered so fast you won&apos;t want to go anywhere else.
         </p>
@@ -70,4 +70,5 @@ export default function Benefits() {
       </div>
     </section>
   )
+
 }

@@ -6,11 +6,11 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto w-full grid md:grid-cols-2 gap-10 items-center">
         {/* Left */}
         <div>
-          <h1 className="text-[72px] leading-[1.0] font-black text-black mb-5 tracking-tight">
+          <h1 className="text-[82px] font-medium text-black mb-5" style={{ lineHeight: '78px' }}>
             Design subscriptions for{' '}
-            <span className="text-italics" style={{ fontSize: '72px' }}>everyone</span>
+            <span className="text-italics" style={{ fontSize: '82px', fontWeight: 400 }}>everyone</span>
           </h1>
-          <p className="text-muted text-lg">Pause or cancel anytime.</p>
+          <p className="text-muted" style={{ fontSize: '20px', lineHeight: '24px' }}>Pause or cancel anytime.</p>
         </div>
 
         {/* Right — tilt card + CTA */}

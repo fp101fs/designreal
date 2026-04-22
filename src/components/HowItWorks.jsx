@@ -46,7 +46,7 @@ export default function HowItWorks() {
   return (
     <section className="px-6 py-12">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-black text-black text-center mb-4 leading-tight">
+        <h2 className="font-medium text-black text-center mb-4" style={{ fontSize: '56px', lineHeight: '56px' }}>
           The way design{' '}
           <span className="text-italics">should've</span>
           <br />been done in the first place

@@ -9,10 +9,10 @@ export default function Footer() {
             </svg>
             <span className="font-bold text-lg">Designjoy</span>
           </div>
-          <h2 className="font-black text-4xl md:text-5xl leading-tight mb-2">
+          <h2 className="font-medium text-white mb-0" style={{ fontSize: '70px', lineHeight: '66px' }}>
             See if Designjoy is<br />the right fit for you
           </h2>
-          <h2 className="font-black text-4xl md:text-5xl leading-tight mb-8">
+          <h2 className="font-medium text-white mb-8" style={{ fontSize: '70px', lineHeight: '66px' }}>
             <span className="text-italics text-white">(it totally is)</span>
           </h2>
           <a href="https://calendly.com/designjoy/15min"

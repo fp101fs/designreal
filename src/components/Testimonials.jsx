@@ -17,11 +17,11 @@ export default function Testimonials() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
         {quotes.map((q) => (
           <div key={q.author}>
-            <p className="font-black text-black text-3xl md:text-4xl leading-tight mb-6 tracking-tight">
+            <p className="font-medium text-black mb-6" style={{ fontSize: '38px', lineHeight: '1.1' }}>
               {q.text}
             </p>
-            <p className="text-black font-semibold">{q.author}</p>
-            <p className="text-muted text-sm">{q.role}</p>
+            <p className="text-black font-medium" style={{ fontSize: '20px' }}>{q.author}</p>
+            <p className="text-muted" style={{ fontSize: '20px', lineHeight: '24px' }}>{q.role}</p>
           </div>
         ))}
       </div>

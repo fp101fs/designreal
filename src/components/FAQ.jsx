@@ -23,7 +23,7 @@ function Item({ q, a }) {
     <div className="border-b border-border">
       <button className="w-full flex items-center justify-between py-4 text-left gap-4 hover:opacity-70 transition-opacity"
         onClick={() => setOpen(!open)}>
-        <span className="text-black font-medium text-sm">{q}</span>
+        <span className="text-black font-medium" style={{ fontSize: '20px', lineHeight: '24px' }}>{q}</span>
         <span className="text-muted text-xl flex-shrink-0">{open ? '∧' : '∨'}</span>
       </button>
       {open && <p className="text-muted text-sm pb-4 leading-relaxed">{a}</p>}
@@ -36,9 +36,9 @@ export default function FAQ() {
     <section className="py-16 px-6">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
         <div>
-          <h2 className="font-black text-black text-4xl md:text-5xl mb-10 leading-tight">
+          <h1 className="font-medium text-black mb-10" style={{ fontSize: '82px', lineHeight: '78px' }}>
             <span className="text-italics">Frequently</span> asked<br />questions
-          </h2>
+          </h1>
           <div>
             {faqs.map((item) => (
               <Item key={item.q} q={item.q} a={item.a} />
