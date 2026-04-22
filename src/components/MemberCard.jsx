@@ -1,58 +1,59 @@
 import { useRef, useCallback } from 'react'
 
+const RESTING_RX = -12
+const RESTING_RY = 8
+
 export default function MemberCard({ className = '' }) {
   const cardRef = useRef(null)
-  const frameRef = useRef(null)
-  const currentRef = useRef({ rx: -12, ry: 8 })
+  const rafRef = useRef(null)
+  const current = useRef({ rx: RESTING_RX, ry: RESTING_RY })
 
   const handleMouseMove = useCallback((e) => {
     const el = cardRef.current
     if (!el) return
+    // Cancel any in-progress return animation
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current)
+      rafRef.current = null
+    }
     const rect = el.getBoundingClientRect()
     const cx = rect.left + rect.width / 2
     const cy = rect.top + rect.height / 2
     const dx = (e.clientX - cx) / (rect.width / 2)
     const dy = (e.clientY - cy) / (rect.height / 2)
-    const targetRx = -dy * 18
-    const targetRy = dx * 18
-
-    if (frameRef.current) cancelAnimationFrame(frameRef.current)
-    const animate = () => {
-      currentRef.current.rx += (targetRx - currentRef.current.rx) * 0.12
-      currentRef.current.ry += (targetRy - currentRef.current.ry) * 0.12
-      if (el) {
-        el.style.transform = `perspective(900px) rotateX(${currentRef.current.rx}deg) rotateY(${currentRef.current.ry}deg) scale(1.02)`
-      }
-      frameRef.current = requestAnimationFrame(animate)
-    }
-    animate()
+    const rx = -dy * 16
+    const ry = dx * 16
+    current.current = { rx, ry }
+    el.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) scale(1.03)`
   }, [])
 
   const handleMouseLeave = useCallback(() => {
-    if (frameRef.current) cancelAnimationFrame(frameRef.current)
     const el = cardRef.current
     if (!el) return
-    const targetRx = -12
-    const targetRy = 8
-    const relax = () => {
-      currentRef.current.rx += (targetRx - currentRef.current.rx) * 0.08
-      currentRef.current.ry += (targetRy - currentRef.current.ry) * 0.08
-      if (el) {
-        el.style.transform = `perspective(900px) rotateX(${currentRef.current.rx}deg) rotateY(${currentRef.current.ry}deg) scale(1)`
-      }
-      if (Math.abs(currentRef.current.rx - targetRx) > 0.05 || Math.abs(currentRef.current.ry - targetRy) > 0.05) {
-        frameRef.current = requestAnimationFrame(relax)
+    if (rafRef.current) cancelAnimationFrame(rafRef.current)
+
+    const step = () => {
+      current.current.rx += (RESTING_RX - current.current.rx) * 0.1
+      current.current.ry += (RESTING_RY - current.current.ry) * 0.1
+      el.style.transform = `perspective(900px) rotateX(${current.current.rx}deg) rotateY(${current.current.ry}deg) scale(1)`
+      if (
+        Math.abs(current.current.rx - RESTING_RX) > 0.05 ||
+        Math.abs(current.current.ry - RESTING_RY) > 0.05
+      ) {
+        rafRef.current = requestAnimationFrame(step)
+      } else {
+        current.current = { rx: RESTING_RX, ry: RESTING_RY }
+        rafRef.current = null
       }
     }
-    relax()
+    rafRef.current = requestAnimationFrame(step)
   }, [])
 
   return (
     <div
-      className={`inline-block ${className}`}
+      className={`inline-block cursor-pointer ${className}`}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ transformStyle: 'preserve-3d' }}
     >
       <img
         ref={cardRef}
@@ -60,14 +61,14 @@ export default function MemberCard({ className = '' }) {
         alt="Designjoy Monthly Club card"
         draggable={false}
         style={{
-          transform: 'perspective(900px) rotateX(-12deg) rotateY(8deg)',
-          transition: 'box-shadow 0.3s ease',
+          transform: `perspective(900px) rotateX(${RESTING_RX}deg) rotateY(${RESTING_RY}deg)`,
           borderRadius: '16px',
           display: 'block',
           width: '100%',
           maxWidth: '420px',
           filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.35))',
           userSelect: 'none',
+          willChange: 'transform',
         }}
       />
     </div>

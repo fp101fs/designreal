@@ -27,7 +27,7 @@ dist
 .DS_Store
 Thumbs.db
 
-# Screenshots / Playwright artifacts
-*.png
-*.jpg
+# Screenshots / Playwright artifacts (root-level only)
+/*.png
+/*.jpg
 .playwright-mcp/
