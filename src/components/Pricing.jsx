@@ -1,3 +1,5 @@
+import MemberCard from './MemberCard'
+
 const features = [
   ['One request at a time', 'Unlimited stock photos'],
   ['Avg. 48 hour delivery', 'Up to 2 users'],
@@ -10,26 +12,23 @@ export default function Pricing() {
     <section id="pricing" className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
         <p className="text-center text-xs font-bold uppercase tracking-widest text-muted mb-3">Pricing</p>
-        <h2 className="text-4xl md:text-5xl font-black text-black text-center mb-2 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-black text-black text-center mb-1 leading-tight">
           One subscription,
         </h2>
         <h2 className="text-4xl md:text-5xl text-black text-center mb-12 leading-tight">
-          <span className="italic-serif font-normal">endless possibilities</span>
+          <span className="text-italics" style={{ fontSize: 'inherit' }}>endless possibilities</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-4 items-start max-w-3xl mx-auto">
-          {/* Left — image card */}
-          <div className="bg-white rounded-3xl p-8 border border-border">
-            <div className="rounded-2xl mb-6 overflow-hidden"
-              style={{ background: 'linear-gradient(135deg, #ec4899 0%, #f97316 50%, #fbbf24 100%)', height: 160 }}>
-              <div className="h-full flex items-center justify-center">
-                <div className="flex gap-2 text-4xl">😊 🤩 😄</div>
+        <div className="grid md:grid-cols-2 gap-4 items-center max-w-3xl mx-auto">
+          {/* Left — card image */}
+          <div className="bg-white rounded-3xl p-8 border border-border flex flex-col items-center">
+            <MemberCard className="mb-6" />
+            <div className="self-start">
+              <div className="inline-flex items-center gap-2 bg-black text-white text-sm font-medium px-4 py-2 rounded-full mb-3">
+                <span className="w-2 h-2 rounded-full bg-yellow-400" /> Start today
               </div>
+              <h3 className="font-black text-black text-2xl">Join<br />Designjoy</h3>
             </div>
-            <div className="inline-flex items-center gap-2 bg-black text-white text-sm font-medium px-4 py-2 rounded-full mb-4">
-              <span className="w-2 h-2 rounded-full bg-yellow-400" /> Start today
-            </div>
-            <h3 className="font-black text-black text-2xl">Join<br/>Designjoy</h3>
           </div>
 
           {/* Right — pricing details */}
@@ -57,9 +56,6 @@ export default function Pricing() {
               style={{ background: 'linear-gradient(135deg, #ea580c, #f97316)' }}>
               <span>😊</span> Join today
             </a>
-
-            {/* decorative smiley */}
-            <div className="absolute -bottom-6 -right-4 text-8xl opacity-60 select-none">😊</div>
           </div>
         </div>
       </div>

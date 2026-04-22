@@ -37,7 +37,7 @@ export default function FAQ() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
         <div>
           <h2 className="font-black text-black text-4xl md:text-5xl mb-10 leading-tight">
-            <span className="italic-serif font-normal">Frequently</span> asked<br />questions
+            <span className="text-italics">Frequently</span> asked<br />questions
           </h2>
           <div>
             {faqs.map((item) => (

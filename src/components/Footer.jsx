@@ -13,7 +13,7 @@ export default function Footer() {
             See if Designjoy is<br />the right fit for you
           </h2>
           <h2 className="font-black text-4xl md:text-5xl leading-tight mb-8">
-            <span className="italic-serif font-normal text-white">(it totally is)</span>
+            <span className="text-italics text-white">(it totally is)</span>
           </h2>
           <a href="https://calendly.com/designjoy/15min"
             className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors">

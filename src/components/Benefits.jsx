@@ -43,9 +43,9 @@ export default function Benefits() {
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-black text-black text-center mb-4 leading-tight">
           It&apos;s{' '}
-          <span className="italic-serif font-normal">&ldquo;you&apos;ll never go</span>
+          <span className="text-italics">&ldquo;you&apos;ll never go</span>
           <br />
-          <span className="italic-serif font-normal">back&rdquo;</span> better
+          <span className="text-italics">back&rdquo;</span> better
         </h2>
         <p className="text-muted text-center mb-12 max-w-xl mx-auto">
           Designjoy replaces unreliable freelancers and expensive agencies for one flat monthly fee,

@@ -48,7 +48,7 @@ export default function HowItWorks() {
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-black text-black text-center mb-4 leading-tight">
           The way design{' '}
-          <span className="italic-serif font-normal">should've</span>
+          <span className="text-italics">should've</span>
           <br />been done in the first place
         </h2>
         <div className="grid md:grid-cols-3 gap-4 mt-12">

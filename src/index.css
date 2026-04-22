@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Designjoy custom italic display font */
+@font-face {
+  font-family: "Seriouslynostalgicfnit Reg";
+  src: url("https://cdn.prod.website-files.com/5837424ae11409586f837994/678547ff1402d3c1cf407122_SeriouslyNostalgicFnIt-Reg.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -13,8 +22,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.italic-serif {
-  font-family: 'Fraunces', serif;
-  font-style: italic;
+.text-italics {
+  font-family: "Seriouslynostalgicfnit Reg", Arial, sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
